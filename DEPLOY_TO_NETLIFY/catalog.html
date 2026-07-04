@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Rush Catalog</title>
+  <link rel="icon" href="assets/coffee-rush-mark.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner-page">
+  <div class="noise"></div>
+
+  <nav class="site-nav scrolled">
+    <a href="index.html" class="brand-lockup">
+      <img src="assets/coffee-rush-mark.svg" alt="Coffee Rush logo" />
+      <span><strong>COFFEE RUSH</strong><small>PRODUCT CATALOG</small></span>
+    </a>
+    <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="brand.html">Brand</a>
+      <button onclick="showInquiryModal('Private Inquiry')" class="nav-cta">Inquire</button>
+    </div>
+  </nav>
+
+  <main class="catalog-page">
+    <section class="section catalog-hero">
+      <p class="eyebrow">WIX CATALOGUE REBUILT</p>
+      <h1>The Coffee Rush Reserves</h1>
+      <p>Every product below is structured from the Coffee Rush Wix catalogue: product names, origin descriptions, badges and prices.</p>
+    
+      <div class="catalog-visual-strip reveal">
+        <img src="assets/reserve-collection-display.png" alt="Coffee Rush private reserve product collection display" />
+        <img src="assets/limited-release-flat-lay.png" alt="Coffee Rush premium limited release coffee flat lay" />
+      </div>
+
+    </section>
+
+    <section class="section catalog-list">
+      
+    <article class="catalog-item reveal" id="rebecca">
+      <div class="catalog-img"><img src="assets/product-rebecca.svg" alt="Rebecca packaging" /></div>
+      <div>
+        <p class="eyebrow">Organic · Sumatra · Lintong Region</p>
+        <h2>Rebecca</h2>
+        <p class="catalog-headline">Medium-bodied, low acid, sweet, and earthy.</p>
+        <p>1kg grown in the Lintong region, near Lake Toba in the north central region of Sumatra. Typically a medium bodied coffee, low acid, sweet with a complex and earthy aroma.</p>
+        <div class="note-tags"><span>Medium body</span><span>Low acid</span><span>Sweet</span><span>Earthy aroma</span></div>
+        <table class="catalog-table"><tr><td>1kg</td><td>R 3 000</td></tr><tr><td>500g</td><td>R 1 600</td></tr><tr><td>250g</td><td>R 850</td></tr></table>
+        <button onclick="inquireAboutReserve('Rebecca')" class="button button-gold">Request Rebecca</button>
+      </div>
+    </article>
+    
+    <article class="catalog-item reveal" id="candice">
+      <div class="catalog-img"><img src="assets/product-candice.svg" alt="Candice packaging" /></div>
+      <div>
+        <p class="eyebrow">Organic · Sumatra · Mandheling</p>
+        <h2>Candice</h2>
+        <p class="catalog-headline">Rich, heavy-bodied, subdued acidity.</p>
+        <p>Some of the finest arabica coffees of great character originate from the Island of Sumatra in Indonesia. Named after the Mandailing people in the north of Sumatra, Mandheling is grown near Pandang, in the West-Central area of Sumatra. Mandheling has a rich, heavy body, subdued acidity, and a unique complex flavor.</p>
+        <div class="note-tags"><span>Heavy body</span><span>Subdued acidity</span><span>Complex</span><span>Rich flavour</span></div>
+        <table class="catalog-table"><tr><td>1kg</td><td>R 2 500</td></tr><tr><td>500g</td><td>R 1 300</td></tr><tr><td>250g</td><td>R 700</td></tr></table>
+        <button onclick="inquireAboutReserve('Candice')" class="button button-gold">Request Candice</button>
+      </div>
+    </article>
+    
+    <article class="catalog-item reveal" id="roxanne">
+      <div class="catalog-img"><img src="assets/product-roxanne.svg" alt="Roxanne packaging" /></div>
+      <div>
+        <p class="eyebrow">Organic · Jamaica · Blue Mountain</p>
+        <h2>Roxanne</h2>
+        <p class="catalog-headline">Mild, smooth, premium, and low in bitterness.</p>
+        <p>From the Blue Mountain region of Jamaica. Due to somewhat limited production, with Japan virtually cornering the market in prior years, Jamaican Blue Mountain has gained the reputation today as one of the most premium and expensive coffees available. Popular for its mild flavor, smooth body and lack of bitterness. The Blue Mountains of Jamaica are located between Kingston to the south and Port Maria to the north. At heights of over 7500 feet, these are some of the highest elevations in the Caribbean.</p>
+        <div class="note-tags"><span>Mild flavour</span><span>Smooth body</span><span>Low bitterness</span><span>Premium origin</span></div>
+        <table class="catalog-table"><tr><td>1kg</td><td>R 2 750</td></tr><tr><td>500g</td><td>R 1 800</td></tr><tr><td>250g</td><td>R 900</td></tr></table>
+        <button onclick="inquireAboutReserve('Roxanne')" class="button button-gold">Request Roxanne</button>
+      </div>
+    </article>
+    
+    <article class="catalog-item reveal" id="alexa-sidamo">
+      <div class="catalog-img"><img src="assets/product-alexa-sidamo.svg" alt="Alexa packaging" /></div>
+      <div>
+        <p class="eyebrow">Mild · Organic · Ethiopia · Sidamo</p>
+        <h2>Alexa</h2>
+        <p class="catalog-headline">Complex, sweet, floral, and bright.</p>
+        <p>From the Sidamo province, grown in the highlands of Ethiopia, considered by many as the birthplace of coffee over a thousand years ago. Complex and sweet, with hints of spice and wine, chocolate tones, a floral aroma, and a bright but soft finish.</p>
+        <div class="note-tags"><span>Complex</span><span>Sweet</span><span>Floral aroma</span><span>Bright soft finish</span></div>
+        <table class="catalog-table"><tr><td>1kg</td><td>R 3 500</td></tr><tr><td>500g</td><td>R 1 800</td></tr><tr><td>250g</td><td>R 900</td></tr></table>
+        <button onclick="inquireAboutReserve('Alexa')" class="button button-gold">Request Alexa</button>
+      </div>
+    </article>
+    
+    <article class="catalog-item reveal" id="tatiana">
+      <div class="catalog-img"><img src="assets/product-tatiana.svg" alt="Tatiana packaging" /></div>
+      <div>
+        <p class="eyebrow">Organic · Brazil · Santos</p>
+        <h2>Tatiana</h2>
+        <p class="catalog-headline">Light-bodied, low acidity, mild and smooth.</p>
+        <p>Historically, these arabica coffee plants were brought to the island of Bourbon, known as the Island of Reunion today. The descendants of these coffee plants are grown in the Southern region of Brazil today, near the port of Santos. Brazilian Santos is a light bodied coffee, with low acidity, a pleasing aroma and a mild, smooth flavor. Growing elevations in Brazil range from 2000 to 4000 feet. These lower altitudes produce coffees low in acidity, exhibiting softer, more subtle characteristics than the bigger and brighter coffees grown at higher elevation above 5000 feet typical of Central America.</p>
+        <div class="note-tags"><span>Light body</span><span>Low acidity</span><span>Pleasing aroma</span><span>Smooth</span></div>
+        <table class="catalog-table"><tr><td>1kg</td><td>R 1 800</td></tr><tr><td>500g</td><td>R 1 300</td></tr><tr><td>250g</td><td>R 700</td></tr></table>
+        <button onclick="inquireAboutReserve('Tatiana')" class="button button-gold">Request Tatiana</button>
+      </div>
+    </article>
+    
+    <article class="catalog-item reveal" id="alexa-colombia">
+      <div class="catalog-img"><img src="assets/product-alexa-colombia.svg" alt="Alexa Colombia packaging" /></div>
+      <div>
+        <p class="eyebrow">Organic · Colombia · Excelso / Supremo Profile</p>
+        <h2>Alexa Colombia</h2>
+        <p class="catalog-headline">Balanced, clean, bright, and mild.</p>
+        <p>Coffee from Colombia has been heavily and successfully marketed in the United States, creating a perception that any and all Colombian coffee equates to the finest coffee. Somewhat over-marketed, a good Colombian can be well balanced, with nice body and bright acidity. More often, Colombian coffee is more mild, clean but nondescript. The more generic Colombian coffees are rated as Excelso and Supremo which simply refers to the size of the coffee beans, which does not necessarily correlate to better coffee. More noteworthy Colombian coffees will also include the name of the growing region such as Bucaramangas, South Juilas, Cauca, and Narino.</p>
+        <div class="note-tags"><span>Balanced</span><span>Nice body</span><span>Bright acidity</span><span>Clean</span></div>
+        <table class="catalog-table"><tr><td>1kg</td><td>R 3 000</td></tr><tr><td>500g</td><td>R 1 300</td></tr><tr><td>250g</td><td>R 700</td></tr></table>
+        <button onclick="inquireAboutReserve('Alexa Colombia')" class="button button-gold">Request Alexa Colombia</button>
+      </div>
+    </article>
+    
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><img src="assets/coffee-rush-wordmark.svg" alt="Coffee Rush wordmark" /><p>Product catalogue rebuilt from Wix.</p></div>
+    <div class="footer-links"><a href="index.html">Home</a><a href="brand.html">Brand</a></div>
+  </footer>
+
+  <div id="inquiryModal" class="modal-wrap hidden" onclick="if(event.target.id==='inquiryModal') hideInquiryModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button onclick="hideInquiryModal()" class="modal-close">×</button>
+      <div id="modalForm">
+        <div class="modal-icon">✉</div>
+        <h3 id="modalTitle">Private Inquiry</h3>
+        <p id="modalSubtitle">A curator will personally respond as soon as possible.</p>
+        <form onsubmit="submitInquiry(event)">
+          <label>Your Name<input type="text" required placeholder="Your name" /></label>
+          <label>Email<input type="email" required placeholder="you@domain.com" /></label>
+          <label>Reserve Interest<select id="reserveSelect"><option>Rebecca</option><option>Candice</option><option>Roxanne</option><option>Alexa</option><option>Tatiana</option><option>Alexa Colombia</option></select></label>
+          <label class="full">Message<textarea required placeholder="Tell us what you would like to order."></textarea></label>
+          <button class="button button-gold full" type="submit">Send private inquiry</button>
+        </form>
+      </div>
+      <div id="successState" class="success hidden"><div>✓</div><h3>Thank you.</h3><p>Your inquiry has been prepared.</p><button onclick="hideInquiryModal()" class="button button-ghost">Close</button></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>COFFEE RUSH • Private Reserves</title>
+  <meta name="description" content="Coffee Rush is a Cape Town premium coffee bean brand offering private reserve profiles, luxury packaging, and quote-based supply." />
+
+  <link rel="icon" href="assets/coffee-rush-mark.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <nav class="site-nav" id="navbar">
+    <a href="index.html" class="brand-lockup">
+      <img src="assets/coffee-rush-mark.svg" alt="Coffee Rush logo mark" />
+      <span>
+        <strong>COFFEE RUSH</strong>
+        <small>EST 2018 • CAPE TOWN</small>
+      </span>
+    </a>
+
+    <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#story">Our Story</a>
+      <a href="index.html#collection">The Reserves</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="brand.html">Brand</a>
+      <a href="index.html#visit">Visit</a>
+      <button onclick="showInquiryModal('Private Inquiry')" class="nav-cta">Inquire</button>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <img class="hero-img" src="assets/hero-luxury-coffee-scene.png" alt="Luxury Coffee Rush espresso scene with steam, black cup, coffee beans and warm gold lighting" />
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+      <div class="pill"><i></i><span>CAPE TOWN • PRIVATE RESERVES</span></div>
+      <h1>COFFEE RUSH</h1>
+      <p class="hero-tagline">Indulge in the extraordinary.</p>
+      <div class="hero-actions">
+        <a href="#collection" class="button button-light">Explore the reserves</a>
+        <button onclick="showInquiryModal('Reserve Your Inquiry')" class="button button-ghost">Reserve your inquiry</button>
+      </div>
+      <p class="scroll-note">SCROLL TO BEGIN</p>
+    </div>
+  </header>
+
+  <section class="signal-strip">
+    <span>SOURCED FROM DISTINCT ORIGINS</span>
+    <span>SINGLE ORIGIN PROFILES</span>
+    <span>PRIVATE INQUIRY FLOW</span>
+  </section>
+
+  <main>
+    <section class="section story" id="story">
+      <div class="story-text reveal">
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+        <h2>A relentless pursuit of the exceptional.</h2>
+        <p>At Coffee Rush, the product world is built around premium coffee beans, restrained luxury, and a private-reserve feeling. The site now carries the same direction as the Wix brand world, but with a cleaner, sharper, more premium interface.</p>
+        <p>The catalogue is real. The experience is redesigned. The result is a brand that feels less like a menu and more like a coffee house with taste, scarcity, and intention.</p>
+        <div class="story-line"><span></span><small>CAPE TOWN • SINCE 2018</small><span></span></div>
+      </div>
+
+      <div class="story-media reveal">
+        <img src="assets/roasted-beans-macro.png" alt="Macro close-up of roasted Coffee Rush coffee beans in dark premium lighting" />
+        <blockquote>“Every bean carries a fingerprint of its origin.”<small>— COFFEE RUSH</small></blockquote>
+      </div>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="section collection-head">
+        <div class="reveal">
+          <p class="eyebrow">SIGNATURE COLLECTION</p>
+          <h2>The Reserves</h2>
+        </div>
+        <p class="reveal">The full Coffee Rush Wix catalogue, rebuilt into a luxury private-reserve product system.</p>
+      </div>
+
+      <div class="section reserve-grid">
+        
+      <article class="reserve-card reveal" data-name="Rebecca" data-origin="Sumatra · Lintong Region">
+        <a class="reserve-image" href="catalog.html#rebecca" aria-label="View Rebecca">
+          <img src="assets/product-rebecca.svg" alt="Coffee Rush Rebecca reserve packaging design" loading="lazy" />
+          <div class="reserve-badge">Organic</div>
+        </a>
+        <div class="reserve-copy">
+          <small>Sumatra · Lintong Region</small>
+          <h3>Rebecca</h3>
+          <p>Medium-bodied, low acid, sweet, and earthy.</p>
+          <div class="note-tags"><span>Medium body</span><span>Low acid</span><span>Sweet</span><span>Earthy aroma</span></div>
+          <ul class="price-list"><li><span>1kg</span><strong>R 3 000</strong></li><li><span>500g</span><strong>R 1 600</strong></li><li><span>250g</span><strong>R 850</strong></li></ul>
+          <button onclick="inquireAboutReserve('Rebecca')" class="line-button">Request this reserve</button>
+        </div>
+      </article>
+    
+
+      <article class="reserve-card reveal" data-name="Candice" data-origin="Sumatra · Mandheling">
+        <a class="reserve-image" href="catalog.html#candice" aria-label="View Candice">
+          <img src="assets/product-candice.svg" alt="Coffee Rush Candice reserve packaging design" loading="lazy" />
+          <div class="reserve-badge">Organic</div>
+        </a>
+        <div class="reserve-copy">
+          <small>Sumatra · Mandheling</small>
+          <h3>Candice</h3>
+          <p>Rich, heavy-bodied, subdued acidity.</p>
+          <div class="note-tags"><span>Heavy body</span><span>Subdued acidity</span><span>Complex</span><span>Rich flavour</span></div>
+          <ul class="price-list"><li><span>1kg</span><strong>R 2 500</strong></li><li><span>500g</span><strong>R 1 300</strong></li><li><span>250g</span><strong>R 700</strong></li></ul>
+          <button onclick="inquireAboutReserve('Candice')" class="line-button">Request this reserve</button>
+        </div>
+      </article>
+    
+
+      <article class="reserve-card reveal" data-name="Roxanne" data-origin="Jamaica · Blue Mountain">
+        <a class="reserve-image" href="catalog.html#roxanne" aria-label="View Roxanne">
+          <img src="assets/product-roxanne.svg" alt="Coffee Rush Roxanne reserve packaging design" loading="lazy" />
+          <div class="reserve-badge">Organic</div>
+        </a>
+        <div class="reserve-copy">
+          <small>Jamaica · Blue Mountain</small>
+          <h3>Roxanne</h3>
+          <p>Mild, smooth, premium, and low in bitterness.</p>
+          <div class="note-tags"><span>Mild flavour</span><span>Smooth body</span><span>Low bitterness</span><span>Premium origin</span></div>
+          <ul class="price-list"><li><span>1kg</span><strong>R 2 750</strong></li><li><span>500g</span><strong>R 1 800</strong></li><li><span>250g</span><strong>R 900</strong></li></ul>
+          <button onclick="inquireAboutReserve('Roxanne')" class="line-button">Request this reserve</button>
+        </div>
+      </article>
+    
+
+      <article class="reserve-card reveal" data-name="Alexa" data-origin="Ethiopia · Sidamo">
+        <a class="reserve-image" href="catalog.html#alexa-sidamo" aria-label="View Alexa">
+          <img src="assets/product-alexa-sidamo.svg" alt="Coffee Rush Alexa reserve packaging design" loading="lazy" />
+          <div class="reserve-badge">Mild · Organic</div>
+        </a>
+        <div class="reserve-copy">
+          <small>Ethiopia · Sidamo</small>
+          <h3>Alexa</h3>
+          <p>Complex, sweet, floral, and bright.</p>
+          <div class="note-tags"><span>Complex</span><span>Sweet</span><span>Floral aroma</span><span>Bright soft finish</span></div>
+          <ul class="price-list"><li><span>1kg</span><strong>R 3 500</strong></li><li><span>500g</span><strong>R 1 800</strong></li><li><span>250g</span><strong>R 900</strong></li></ul>
+          <button onclick="inquireAboutReserve('Alexa')" class="line-button">Request this reserve</button>
+        </div>
+      </article>
+    
+
+      <article class="reserve-card reveal" data-name="Tatiana" data-origin="Brazil · Santos">
+        <a class="reserve-image" href="catalog.html#tatiana" aria-label="View Tatiana">
+          <img src="assets/product-tatiana.svg" alt="Coffee Rush Tatiana reserve packaging design" loading="lazy" />
+          <div class="reserve-badge">Organic</div>
+        </a>
+        <div class="reserve-copy">
+          <small>Brazil · Santos</small>
+          <h3>Tatiana</h3>
+          <p>Light-bodied, low acidity, mild and smooth.</p>
+          <div class="note-tags"><span>Light body</span><span>Low acidity</span><span>Pleasing aroma</span><span>Smooth</span></div>
+          <ul class="price-list"><li><span>1kg</span><strong>R 1 800</strong></li><li><span>500g</span><strong>R 1 300</strong></li><li><span>250g</span><strong>R 700</strong></li></ul>
+          <button onclick="inquireAboutReserve('Tatiana')" class="line-button">Request this reserve</button>
+        </div>
+      </article>
+    
+
+      <article class="reserve-card reveal" data-name="Alexa Colombia" data-origin="Colombia · Excelso / Supremo Profile">
+        <a class="reserve-image" href="catalog.html#alexa-colombia" aria-label="View Alexa Colombia">
+          <img src="assets/product-alexa-colombia.svg" alt="Coffee Rush Alexa Colombia reserve packaging design" loading="lazy" />
+          <div class="reserve-badge">Organic</div>
+        </a>
+        <div class="reserve-copy">
+          <small>Colombia · Excelso / Supremo Profile</small>
+          <h3>Alexa Colombia</h3>
+          <p>Balanced, clean, bright, and mild.</p>
+          <div class="note-tags"><span>Balanced</span><span>Nice body</span><span>Bright acidity</span><span>Clean</span></div>
+          <ul class="price-list"><li><span>1kg</span><strong>R 3 000</strong></li><li><span>500g</span><strong>R 1 300</strong></li><li><span>250g</span><strong>R 700</strong></li></ul>
+          <button onclick="inquireAboutReserve('Alexa Colombia')" class="line-button">Request this reserve</button>
+        </div>
+      </article>
+    
+      </div>
+
+      <p class="availability">Product names, prices and descriptions are pulled from the current Coffee Rush Wix catalogue. Confirm final stock before launch.</p>
+    </section>
+
+    <section class="section packaging" id="packaging">
+      <div class="packaging-copy reveal">
+        <p class="eyebrow">PHYSICAL EXPRESSION</p>
+        <h2>Packaging that earns the price.</h2>
+        <p>Dark matte bags, warm gold labels, reserve naming, and product photography-style artwork make the beans feel collectible before the customer even reads the description.</p>
+        <a href="brand.html" class="button button-gold">View design system</a>
+      </div>
+      <div class="packaging-board reveal">
+        <img src="assets/reserve-collection-display.png" alt="Coffee Rush private reserve collection display with black coffee bags and gold labels" />
+      </div>
+    </section>
+
+    
+    <section class="visual-editorial section" id="visuals">
+      <div class="visual-copy reveal">
+        <p class="eyebrow">VISUAL WORLD</p>
+        <h2>Black marble. Warm gold. Private reserve energy.</h2>
+        <p>The final site now uses actual visual assets across the brand world: a cinematic hero scene, real-feeling reserve collection display, macro bean photography, private atelier atmosphere, and a limited-release flat lay.</p>
+      </div>
+
+      <div class="visual-grid">
+        <figure class="reveal">
+          <img src="assets/limited-release-flat-lay.png" alt="Coffee Rush limited release flat lay with coffee bag, espresso cup, beans, spoon and dark marble surface" />
+          <figcaption>Limited-release flat lay</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/private-atelier-lounge.png" alt="Dark luxury Coffee Rush coffee lounge with warm lighting, espresso bar and tasting table" />
+          <figcaption>Private atelier lounge</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <section class="experience section" id="experience">
+      <div class="experience-copy reveal">
+        <p class="eyebrow">THE EXPERIENCE</p>
+        <h2>An experience worth waiting for.</h2>
+        <p>We are keeping the private, cinematic energy from your reference direction, but grounding it in the actual catalogue and contact details.</p>
+        <ul>
+          <li>Direct product catalogue from Wix</li>
+          <li>Private inquiry modal</li>
+          <li>Luxury motion and hover system</li>
+          <li>Deploy-ready static files</li>
+        </ul>
+      </div>
+      <div class="atelier-card reveal image-backed">
+        <img src="assets/private-atelier-lounge.png" alt="Coffee Rush private atelier lounge interior with warm ambient light" />
+        <div>
+          <small>THE ATELIER</small>
+          <strong>Where connoisseurs gather in quiet appreciation.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="section">
+        <p class="eyebrow">THE ATELIER</p>
+        <h2>Visit or enquire</h2>
+        <p class="visit-lead">Use this as a premium appointment and supply request gateway. Details below are based on the current Wix site.</p>
+
+        <div class="visit-grid">
+          <article class="reveal">
+            <small>OPENING HOURS</small>
+            <p><strong>Monday – Saturday</strong><span>11am – 11pm</span></p>
+            <p><strong>Sunday</strong><span>11am – 7pm</span></p>
+          </article>
+          <article class="wide reveal">
+            <small>CONTACT</small>
+            <h3>Cape Town, South Africa</h3>
+            <p>hudson@coffeerushpty.co.za</p>
+            <p>chevaun@coffeerushpty.co.za</p>
+            <p>071 6333 848</p>
+            <button onclick="showInquiryModal('Visit Request')" class="line-button left">Request a private tasting</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section" id="enquire">
+      <p class="eyebrow">BECOME PART OF OUR INNER CIRCLE</p>
+      <h2>Receive early access to new releases and private lots.</h2>
+      <button onclick="showInquiryModal('Reserve List Signup')" class="button button-gold">Join the reserve list</button>
+      <small>Connect this form to email, WhatsApp, Netlify Forms or your CRM before launch.</small>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <img src="assets/coffee-rush-wordmark.svg" alt="Coffee Rush wordmark" />
+      <p>All rights reserved. Curated with obsession.</p>
+    </div>
+    <div class="footer-links">
+      <a href="catalog.html">Catalog</a>
+      <a href="brand.html">Brand</a>
+      <a href="mailto:hudson@coffeerushpty.co.za">Email</a>
+      <span>Instagram @coffeerush_sa</span>
+    </div>
+  </footer>
+
+  <div id="inquiryModal" class="modal-wrap hidden" onclick="if(event.target.id==='inquiryModal') hideInquiryModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button onclick="hideInquiryModal()" class="modal-close">×</button>
+
+      <div id="modalForm">
+        <div class="modal-icon">✉</div>
+        <h3 id="modalTitle">Private Inquiry</h3>
+        <p id="modalSubtitle">A curator will personally respond as soon as possible.</p>
+
+        <form onsubmit="submitInquiry(event)">
+          <label>Your Name<input type="text" required placeholder="Your name" /></label>
+          <label>Email Address<input type="email" required placeholder="you@domain.com" /></label>
+          <label>Phone<input type="tel" placeholder="+27 ..." /></label>
+          <label>Reserve Interest
+            <select id="reserveSelect">
+              <option>Rebecca</option><option>Candice</option><option>Roxanne</option><option>Alexa</option><option>Tatiana</option><option>Alexa Colombia</option>
+              <option>Mixed reserve selection</option>
+              <option>Private tasting</option>
+              <option>Wholesale / recurring supply</option>
+            </select>
+          </label>
+          <label class="full">Message<textarea required placeholder="Tell us what you would like to order or discuss."></textarea></label>
+          <button class="button button-gold full" type="submit">Send private inquiry</button>
+        </form>
+      </div>
+
+      <div id="successState" class="success hidden">
+        <div>✓</div>
+        <h3>Thank you.</h3>
+        <p>Your inquiry has been prepared. Connect this form to email, WhatsApp, Netlify Forms or a CRM before launch.</p>
+        <button onclick="hideInquiryModal()" class="button button-ghost">Close window</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
